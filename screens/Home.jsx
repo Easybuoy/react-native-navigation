@@ -1,13 +1,21 @@
 import React from "react";
-import { View, Button, Text } from "react-native";
+import { View, Button, Text, StyleSheet } from "react-native";
 
 const Home = () => {
   return (
-    <View>
+    <View style={styles.center}>
       <Text>This is the home screen</Text>
       <Button title="Go to About Screen" />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  center: {
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+  },
+});
 
 export default Home;
