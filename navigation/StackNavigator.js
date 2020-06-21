@@ -15,21 +15,21 @@ const screenOptionStyle = {
   headerBackTitle: "Back",
 };
 
-function MainStackNavigator() {
+const MainStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="About" component={About} />
     </Stack.Navigator>
   );
-}
+};
 
-function ContactStackNavigator() {
+const ContactStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="Contact" component={Contact} />
     </Stack.Navigator>
   );
-}
+};
 
 export { MainStackNavigator, ContactStackNavigator };

@@ -3,10 +3,12 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import DrawerNavigator from "./navigation/DrawerNavigator";
 
-export default function App() {
+const App = () => {
   return (
     <NavigationContainer>
       <DrawerNavigator />
     </NavigationContainer>
   );
-}
+};
+
+export default App;
